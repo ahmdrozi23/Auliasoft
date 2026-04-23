@@ -338,6 +338,16 @@ section{padding:80px 24px;max-width:1200px;margin:0 auto}
 .feature-item .icon{font-size:2.2rem;margin-bottom:12px}
 .feature-item h4{font-family:'Playfair Display',serif;font-size:1rem;color:var(--gold);margin-bottom:8px}
 .feature-item p{font-size:.82rem;color:var(--muted);line-height:1.6}
+.feature-screenshot {margin-top: 1rem;border-radius: 10px;overflow: hidden;border: 1px solid var(--border, #1e1e2e);background: #0e0e18;box-shadow: 0 2px 12px rgba(0,0,0,0.3);transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;}
+.feature-item:hover .feature-screenshot {
+  border-color: rgba(212,168,67,0.2);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4), 0 0 30px rgba(212,168,67,0.03);
+  transform: translateY(-2px);}
+.feature-screenshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;}
 
 /* USE CASE DIAGRAM */
 .usecase-container{background:var(--dark2);border:1px solid var(--border);border-radius:var(--radius);padding:32px;overflow-x:auto}
@@ -1171,6 +1181,13 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:40px 2
       <div class="icon">🔐</div>
       <h4>Login & Hak Akses</h4>
       <p>Sistem login multi-user dengan otorisasi bertingkat. Admin, kasir, dan owner memiliki akses berbeda sesuai peran masing-masing.</p>
+      <div class="feature-screenshot">
+        <img
+          src="https://z-cdn-media.chatglm.cn/files/bb9cab63-4be6-4806-81cc-ae1ef24a81b9.png?auth_key=1876945027-bb73b56bb78940b9af326b3da5d998bd-0-a78a7b20ab73b52bd778f5de2eb5e02f"
+          alt="Tampilan Login Aulia E-POS — form Nama Pengguna dan Kata Sandi"
+          loading="lazy"
+        >
+      </div>
     </div>
     <div class="feature-item">
       <div class="icon">📦</div>
